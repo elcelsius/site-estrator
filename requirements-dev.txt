@@ -1,0 +1,6 @@
+-r requirements.txt
+
+ruff>=0.15.21
+detect-secrets>=1.5.0
+pip-audit>=2.10.1
+setuptools>=83.0.0
