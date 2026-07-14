@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Segunda página de teste</title>
+  </head>
+  <body>
+    <main>
+      <h1>Segunda página de teste</h1>
+      <p>
+        Esta é a página encontrada na primeira profundidade. Seu conteúdo
+        confirma que links diretos da página inicial entram na fila e são
+        processados normalmente. A saída deve permanecer em texto simples,
+        conter o título do documento e registrar a URL de origem para permitir
+        auditoria posterior do material coletado.
+      </p>
+      <p>
+        O teste também protege contra uma regressão da versão anterior da
+        interface, na qual a profundidade informada era multiplicada por uma
+        quantidade arbitrária de páginas. Agora cada item da fila possui uma
+        camada explícita, e somente os links descobertos antes do limite podem
+        gerar novos trabalhos para o navegador.
+      </p>
+      <p>
+        Mais algumas frases tornam a amostra semelhante a uma página real e
+        evitam que o filtro de conteúdo curto descarte o documento. O servidor
+        usado na verificação atende apenas no endereço local, encerra ao final
+        do comando e não recebe informações privadas. A terceira página está
+        ligada abaixo, mas não deve ser visitada quando a profundidade máxima
+        for igual a um.
+      </p>
+      <a href="/nivel-2.html">Abrir página além do limite</a>
+    </main>
+  </body>
+</html>

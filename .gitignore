@@ -1,0 +1,79 @@
+# --- Python / Build ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+
+# --- Virtual envs ---
+.venv/
+venv/
+env/
+
+# --- IDE / Editors ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Caches / Tests ---
+.cache/
+.pip-cache/
+.audit-cache/
+.mypy_cache/
+.pytype/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Playwright ---
+playwright/.cache/
+**/playwright-report/
+**/test-results/
+**/web-test-results/
+
+# --- Secrets & local config ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# --- Logs & manifests ---
+*.log
+data/0_extracao_bruta/log/
+data/1_markdowns_limpos/manifest.jsonl
+
+# --- Data (generated) ---
+# Se você NÃO quer versionar os dados gerados, mantenha as linhas abaixo.
+# Para versionar algum subdiretório (ex.: 1_markdowns_limpos), remova a regra correspondente.
+data/**
+!data/.gitkeep
+!data/README.md
+
+# --- PDFs (matéria-prima pesada) ---
+# Por padrão, não versionar os PDFs baixados.
+pdf/**
+!pdf/.gitkeep
+!pdf/README.md
+
+# --- Temp ---
+tmp/
+temp/
+
+# --- Windows executáveis / lixo eventual ---
+*.tmp
+*.bak
+*.swp
